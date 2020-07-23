@@ -22,7 +22,7 @@ $('#preview').html(marked(EditorText).replace(/&gt;+/g, '>'))
         <div id="editor-title">
       {this.state.editor[1]}
   </div>
-    <textarea id="editor" className={this.state.editor[2]} onChange={this.handleChange} defaultValue={this.state.input}></textarea>
+    <textarea id="editor" className={this.state.editor[2]} onChange={this.handleChange} defaultValue={this.state.input}  spellCheck="false"></textarea>
       </div>
         <div id="text-editor" className={this.state.preview[0]}>
         <div id="editor-title">
