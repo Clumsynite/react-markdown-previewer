@@ -1,6 +1,11 @@
+/* Editor Font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
+/* Titlebar Font */
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+/* Preview Font */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 body {
   background-color: cyan;
@@ -56,6 +61,7 @@ body {
   outline: none;
 }
 #preview {
+  font-family: 'Quicksand', sans-serif;
   text-align: initial;
   color: #0000ff;
   background-color: #9dffce;
