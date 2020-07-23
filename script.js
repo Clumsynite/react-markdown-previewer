@@ -37,7 +37,7 @@ $('#preview').html(marked(EditorText).replace(/&gt;+/g, '>'))
 
 
 const TEMPTEXT = `# Welcome to my Markdown Previewer
-## It parses the Github markdown text as HTML and displays it in the field below.
+## It parses the Github Flavored Markdown text as HTML and displays it in the Preview below.
 
 If you liked this, you can view my other projects on [**Github**](https://github.com/Clumsynite/)
 
