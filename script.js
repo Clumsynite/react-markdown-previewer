@@ -40,6 +40,8 @@ const TEMPTEXT = `# Welcome to my Markdown Previewer
 ## It parses the Github Flavored Markdown text as HTML and displays it in the Preview below.
 
 If you liked this, you can view my other projects on [**Github**](https://github.com/Clumsynite/)
+### or
+If you want to look at how I made it. Here's the [**repo**](https://github.com/Clumsynite/react-markdown-previewer)
 
 By the way, just to show you how to use code blocks:
 
