@@ -41,7 +41,7 @@ const TEMPTEXT = `# Welcome to my Markdown Previewer
 
 If you liked this, you can view my other projects on [**Github**](https://github.com/Clumsynite/)
 
-By the way, just to pass the test cases mentioned, here's some inline code:
+By the way, just to show you how to use code blocks:
 
 \`let inlineCode = true;\`
 
@@ -53,7 +53,7 @@ By the way, just to pass the test cases mentioned, here's some inline code:
   }
 \`\`\`
 
-Also, here's the List which is also needed to pass the test:
+Also, here's how to create lists in markdown:
 
 * List item 1
 * List item 2
