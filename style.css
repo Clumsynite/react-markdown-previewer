@@ -38,12 +38,12 @@ body {
 }
 #editor {
   background-color: #000000;
-  color: #16cdff;
+  color: wheat;
   font-family: 'Roboto Mono', monospace;
   overflow: auto;
   box-sizing: border-box;
   vertical-align: top;
-  padding: 4px;
+  padding-left: 4px;
   
 }
 .medium {
@@ -65,12 +65,12 @@ body {
   font-family: 'Quicksand', sans-serif;
   text-align: initial;
   color: #000000;
-  background-color: #16cdff;
+  background-color: #27ff93;
   height: auto;
   overflow: auto;
   padding-left: 4px;
   min-height: 400px;
-  font-size: 16px;
+  font-size: 18px;
   box-sizing: border-box;
   border: 1px solid #1f1f1f;
 }
