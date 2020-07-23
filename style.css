@@ -13,15 +13,19 @@ body {
 }
 #text-editor {
   display: inline-block;
-  box-shadow: 1px 1px 10px 2px darken(cyan, 20%);;
   height: 100%;
+  -webkit-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.43);
+  -moz-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.43);
+  box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.43);
 }
 #editor-title {
   background-color: black;
-  box-shadow: 1px 1px 10px 2px darken(cyan, 20%);;
   color: cyan;
   padding: 5px;
   text-align: left;
+  -webkit-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.43);
+  -moz-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.43);
+  box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.43);
 }
 #editor {
   background-color: #9dffce;
@@ -54,7 +58,11 @@ body {
   background-color: #9dffce;
   height: auto;
   overflow: auto;
-  padding: 4px;
+  padding-left: 4px;
   min-height: 400px;
   font-size: 16px;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
 }
