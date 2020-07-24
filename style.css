@@ -38,7 +38,7 @@ body {
 }
 #editor {
   background-color: #000000;
-  color: wheat;
+  color: #9cffe7;
   font-family: 'Roboto Mono', monospace;
   overflow: auto;
   box-sizing: border-box;
