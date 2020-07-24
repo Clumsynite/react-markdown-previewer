@@ -18,19 +18,21 @@ $('#preview').html(marked(EditorText).replace(/&gt;+/g, '>'))
   render(){
     return(
       <div>
-      <div id="text-editor" className={this.state.editor[0]}>
-        <div id="editor-title">
-      {this.state.editor[1]}
-  </div>
-    <textarea id="editor" className={this.state.editor[2]} onChange={this.handleChange} defaultValue={this.state.input}  spellCheck="false"></textarea>
-      </div>
-        <div id="text-editor" className={this.state.preview[0]}>
-        <div id="editor-title">
-      {this.state.preview[1]}
-  </div>
-    <div id="preview" className={this.state.preview[2]}></div>
-      </div>
+        <div id="text-editor" className={this.state.editor[0]}>
+          <div id="editor-title">
+            {this.state.editor[1]}
+            <button id='editor-btn' class='fullscreen'>+</button>
+          </div>
+          <textarea id="editor" className={this.state.editor[2]} onChange={this.handleChange} defaultValue={this.state.input}  spellCheck="false"></textarea>
         </div>
+        <div id="text-editor" className={this.state.preview[0]}>
+          <div id="editor-title">
+            {this.state.preview[1]}
+            <button id='preview-btn' class='fullscreen'>+</button>
+          </div>
+          <div id="preview" className={this.state.preview[2]}></div>
+        </div>
+      </div>
     )
   }
 }

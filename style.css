@@ -77,3 +77,15 @@ body {
 img {
   max-width: 100%;
 }
+.fullscreen {
+  float: right;
+  background-color: black;
+  color: cyan;
+  border: none;
+  font-size: 20px;
+  border-radius: 7px;
+}
+.fullscreen:hover, .fullscreen:focus {
+  color: black;
+  background-color: cyan;
+}
