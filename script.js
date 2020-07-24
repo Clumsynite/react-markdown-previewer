@@ -7,28 +7,64 @@ class App extends React.Component {
     this.state = {
       editor: ['medium', 'Editor', 'textMid'],
       input: TEMPTEXT,
-      preview: ['div-large', 'Preview', 'textMid']
+      preview: ['div-large', 'Preview', 'textMid'],
+      fullscreen: false
     }
     this.handleChange = this.handleChange.bind(this);
+    this.handleClick = this.handleClick.bind(this);
   }
   handleChange = () => {
    let EditorText = $('#editor').val();
 $('#preview').html(marked(EditorText).replace(/&gt;+/g, '>'))
   }
+  handleClick = id => {
+    if(id=='prev'){
+      const showDiv = '#preview-div';
+      const hideDiv = '#editor-div';
+      if(this.state.fullscreen){
+        $(showDiv).addClass(this.state.preview[0]);
+        $(hideDiv).show();
+        $(showDiv).addClass('fullscreen');
+        this.setState({fullscreen: false});
+      }else {
+        $(showDiv).addClass('fullscreen');
+        $(showDiv).removeClass(this.state.preview[0]);
+        $(hideDiv).hide();
+        this.setState({fullscreen: true});
+      }
+    }else if(id=='edit'){
+      const showDiv = '#editor-div';
+      const hideDiv = '#preview-div';
+      if(this.state.fullscreen){
+        $(showDiv).addClass(this.state.editor[0]);
+        $(hideDiv).show();
+        $(showDiv).removeClass('fullscreen')
+        $('#editor').removeClass('full-edit');
+        this.setState({fullscreen: false});
+      }else {
+        $('#editor').addClass('full-edit');
+        $(showDiv).addClass('fullscreen')
+        $(showDiv).removeClass(this.state.editor[0]);
+        $(hideDiv).hide();
+        this.setState({fullscreen: true});
+      }
+    }
+  }
+
   render(){
     return(
       <div>
-        <div id="text-editor" className={this.state.editor[0]}>
+        <div id="editor-div" className={'text-editor '+this.state.editor[0]+' small-screen'}>
           <div id="editor-title">
             {this.state.editor[1]}
-            <button id='editor-btn' class='fullscreen'>+</button>
+            <button id='editor-btn' className='btn-fullscreen' onClick={() => this.handleClick('edit')}>+</button>
           </div>
           <textarea id="editor" className={this.state.editor[2]} onChange={this.handleChange} defaultValue={this.state.input}  spellCheck="false"></textarea>
         </div>
-        <div id="text-editor" className={this.state.preview[0]}>
+        <div id="preview-div" className={'text-editor '+this.state.preview[0]}>
           <div id="editor-title">
             {this.state.preview[1]}
-            <button id='preview-btn' class='fullscreen'>+</button>
+            <button id='preview-btn' className='btn-fullscreen' onClick={() => this.handleClick('prev')}>+</button>
           </div>
           <div id="preview" className={this.state.preview[2]}></div>
         </div>
@@ -76,5 +112,3 @@ ReactDOM.render(<App/>, app)
 
 
 $('#preview').html(marked(TEMPTEXT))
-
-console.log(marked.setOptions.gfm)

@@ -19,7 +19,7 @@ body {
   max-width: 100%;
   margin-top: 20px;
 }
-#text-editor {
+.text-editor {
   display: inline-block;
   height: 100%;
   -webkit-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.43);
@@ -44,7 +44,6 @@ body {
   box-sizing: border-box;
   vertical-align: top;
   padding-left: 4px;
-  
 }
 .medium {
   width: 600px;
@@ -77,7 +76,7 @@ body {
 img {
   max-width: 100%;
 }
-.fullscreen {
+.btn-fullscreen {
   float: right;
   background-color: black;
   color: cyan;
@@ -85,7 +84,24 @@ img {
   font-size: 20px;
   border-radius: 7px;
 }
-.fullscreen:hover, .fullscreen:focus {
+.btn-fullscreen:hover, .btn-fullscreen:focus {
   color: black;
   background-color: cyan;
+}
+
+.fullscreen{
+  width: 95%;
+  height: 100vh;
+}
+.full-edit {
+  height: 100vh;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 760px) {   
+  
+  .small-screen {
+    width: 60vw;
+  }
+ 
 }
