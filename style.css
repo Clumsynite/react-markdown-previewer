@@ -37,6 +37,17 @@ body {
   -moz-box-shadow: 0px 3px 10px 0px cyan;
   box-shadow: 0px 3px 10px 0px cyan;
 }
+body::-webkit-scrollbar, textarea::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: lime;        /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+  background-color: black;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid lime;  /* creates padding around scroll thumb */
+}
 #editor-title{
   color: cyan;
 }
@@ -48,6 +59,15 @@ body {
   box-sizing: border-box;
   vertical-align: top;
   padding-left: 4px;
+  resize: none;
+}
+textarea::-webkit-scrollbar-track {
+  background: cyan;        /* color of the tracking area */
+}
+textarea::-webkit-scrollbar-thumb {
+  background-color: black;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid cyan;  /* creates padding around scroll thumb */
 }
 .medium {
   width: 600px;
