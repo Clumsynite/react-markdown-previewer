@@ -109,7 +109,9 @@ img {
   height: 100vh;
   margin-bottom: 20px;
 }
-
+a{
+  color: blue;
+}
 @media screen and (max-width: 760px) {   
   
   .small-screen {
