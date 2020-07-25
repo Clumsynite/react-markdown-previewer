@@ -9,7 +9,7 @@
 
 body {
   /* background-color: #16cdff; */
-  background-color: #75dcff;
+  background-color: black;
   margin: 0;
   padding: 0;
 }
@@ -22,23 +22,27 @@ body {
 .text-editor {
   display: inline-block;
   height: 100%;
-  -webkit-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.43);
-  -moz-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.43);
-  box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.43);
 }
-#editor-title {
+.title {
   font-family: 'Abel', sans-serif;
   background-color: black;
-  color: rgb(7, 226, 255);
   padding: 5px;
   text-align: left;
   -webkit-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.43);
   -moz-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.43);
   box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.43);
 }
+#editor-div {
+  -webkit-box-shadow: 0px 3px 10px 0px cyan;
+  -moz-box-shadow: 0px 3px 10px 0px cyan;
+  box-shadow: 0px 3px 10px 0px cyan;
+}
+#editor-title{
+  color: cyan;
+}
 #editor {
   background-color: #000000;
-  color: #9cffe7;
+  color: cyan;
   font-family: 'Roboto Mono', monospace;
   overflow: auto;
   box-sizing: border-box;
@@ -60,18 +64,26 @@ body {
 #editor:focus, #editor:active, #editor:hover {
   outline: none;
 }
+#preview-div {
+  -webkit-box-shadow: 0px 3px 10px 0px lime;
+  -moz-box-shadow: 0px 3px 10px 0px lime;
+  box-shadow: 0px 3px 10px 0px lime;
+}
+#preview-title{
+  color: lime;
+}
 #preview {
   font-family: 'Quicksand', sans-serif;
   text-align: initial;
-  color: #000000;
-  background-color: #89ffc4;
+  color: #00ff00;
+  background-color: black;
   height: auto;
   overflow: auto;
   padding-left: 4px;
   min-height: 400px;
   font-size: 18px;
   box-sizing: border-box;
-  border: 1px solid #1f1f1f;
+  border: 1px solid lime;
 }
 img {
   max-width: 100%;

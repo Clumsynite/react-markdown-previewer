@@ -55,14 +55,14 @@ $('#preview').html(marked(EditorText).replace(/&gt;+/g, '>'))
     return(
       <div>
         <div id="editor-div" className={'text-editor '+this.state.editor[0]+' small-screen'}>
-          <div id="editor-title">
+          <div id="editor-title" class="title">
             {this.state.editor[1]}
             <button id='editor-btn' className='btn-fullscreen' onClick={() => this.handleClick('edit')}>+</button>
           </div>
           <textarea id="editor" className={this.state.editor[2]} onChange={this.handleChange} defaultValue={this.state.input}  spellCheck="false"></textarea>
         </div>
         <div id="preview-div" className={'text-editor '+this.state.preview[0]}>
-          <div id="editor-title">
+          <div id="preview-title" class="title">
             {this.state.preview[1]}
             <button id='preview-btn' className='btn-fullscreen' onClick={() => this.handleClick('prev')}>+</button>
           </div>
