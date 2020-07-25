@@ -32,7 +32,7 @@ body {
   -moz-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.43);
   box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.43);
 }
-#editor-div {
+#editor-title, #editor {
   -webkit-box-shadow: 0px 3px 10px 0px cyan;
   -moz-box-shadow: 0px 3px 10px 0px cyan;
   box-shadow: 0px 3px 10px 0px cyan;
@@ -84,7 +84,7 @@ textarea::-webkit-scrollbar-thumb {
 #editor:focus, #editor:active, #editor:hover {
   outline: none;
 }
-#preview-div {
+#preview-title, #preview {
   -webkit-box-shadow: 0px 3px 10px 0px lime;
   -moz-box-shadow: 0px 3px 10px 0px lime;
   box-shadow: 0px 3px 10px 0px lime;
@@ -110,17 +110,26 @@ img {
 }
 .btn-fullscreen {
   float: right;
-  background-color: black;
-  color: cyan;
   border: none;
   font-size: 20px;
   border-radius: 7px;
 }
-.btn-fullscreen:hover, .btn-fullscreen:focus {
+#editor-btn {
+  background-color: black;
+  color: cyan;
+}
+#editor-btn:hover, #editor-btn:focus {
   color: black;
   background-color: cyan;
 }
-
+#preview-btn {
+  background-color: black;
+  color: lime;
+}
+#preview-btn:hover, #preview-btn:focus {
+  color: black;
+  background-color: lime;
+}
 .fullscreen{
   width: 95%;
   height: 100vh;
