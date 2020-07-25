@@ -104,7 +104,7 @@ A random quote for you:
 
 >  -Goethe
 
-![Spiderman Bye Bye](https://www.nicepng.com/png/detail/395-3959993_bye-bye-bye-spiderman-superhero-bye-superhero.png)
+![Dancing Spiderman](https://media1.giphy.com/media/8zYunr3Hg8XPq/200.gif)
 `;
 
 
