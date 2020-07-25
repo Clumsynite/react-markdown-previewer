@@ -1,11 +1,12 @@
 /* Editor Font */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
 /* Titlebar Font */
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 
 /* Preview Font */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
 
 body {
   /* background-color: #16cdff; */
@@ -54,7 +55,7 @@ body::-webkit-scrollbar-thumb {
 #editor {
   background-color: #000000;
   color: cyan;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Share Tech Mono', monospace;
   overflow: auto;
   box-sizing: border-box;
   vertical-align: top;
